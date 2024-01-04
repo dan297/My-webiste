@@ -1,3 +1,41 @@
-.homepage-container{
+body {
+    margin: 0px;
+}
 
+.homepage-container{
+    max-width: 100%;
+    background-color: lightgrey;
+}
+
+.homepage-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.image-wrapper-football {
+    background-image: url(../images/messi.jpeg);
+    height: 100%;
+    background-size: cover;
+    background-position-x: 85%;
+}
+
+.image-wrapper-car {
+    background-image: url(../images/lambo.jpeg);
+    background-size: cover;
+    height: 100%;
+    background-position-x: 70%;
+}
+
+.football-background-image, .car-background-image {
+    width: 100%;
+    height: 100vh;
+}
+
+@media (max-width: 1000px) {
+    .homepage-wrapper {
+        flex-direction: column;
+    }
+    .football-background-image, .car-background-image {
+        height: 50vh;
+    }
 }
