@@ -2,10 +2,14 @@ body {
     margin: 0px;
 }
 
+:root {
+    --main-bk-img: rgb(227, 224, 224);;
+  }
+
 .homepage-container{
     max-width: 100%;
-    background-color: lightgrey;
-}
+    background-color: var(--main-bk-img);
+}   
 
 .homepage-wrapper {
     display: flex;
@@ -17,6 +21,13 @@ body {
     height: 100%;
     background-size: cover;
     background-position-x: 85%;
+    cursor: pointer;
+    object-fit: cover;
+    transition: all 2s ease;
+}
+
+.image-wrapper-football:hover {
+    transform: scale(1.1);
 }
 
 .image-wrapper-car {
@@ -24,11 +35,19 @@ body {
     background-size: cover;
     height: 100%;
     background-position-x: 70%;
+    cursor: pointer;
+    object-fit: cover;
+    transition: all 1s ease;
 }
 
-.football-background-image, .car-background-image {
+.image-wrapper-car:hover {
+    transform: scale(1.1);
+}
+
+.football-background-image, .car-background-image { 
     width: 100%;
     height: 100vh;
+    overflow: hidden;
 }
 
 @media (max-width: 1000px) {
