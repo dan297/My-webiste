@@ -30,6 +30,8 @@ body {
     transform: scale(1.1);
 }
 
+
+
 .image-wrapper-car {
     background-image: url(../images/lambo.jpeg);
     background-size: cover;
@@ -48,6 +50,14 @@ body {
     width: 100%;
     height: 100vh;
     overflow: hidden;
+}
+
+.football-background-image:hover .image-wrapper-football {
+    opacity: 0.3;
+}
+
+.car-background-image:hover .image-wrapper-car {
+    opacity: 0.3;
 }
 
 @media (max-width: 1000px) {
