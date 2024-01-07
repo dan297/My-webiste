@@ -1,0 +1,100 @@
+body {
+    margin: 0px;
+}
+
+:root {
+    --main-bk-img: rgb(227, 224, 224);;
+  }
+
+.homepage-container{
+    max-width: 100%;
+    background-color: var(--main-bk-img);
+}   
+
+.homepage-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.image-wrapper-football {
+    background-image: url(../images/gym.jpeg);
+    height: 100%;
+    background-size: cover;
+    background-position-x: 85%;
+    object-fit: cover;
+    transition: all 2s ease;
+}
+
+.image-wrapper-car {
+    background-image: url(../images/lambo.jpeg);
+    background-size: cover;
+    height: 100%;
+    background-position-x: 70%;
+    object-fit: cover;
+    transition: all 2s ease;
+}
+
+.image-wrapper-football:hover, .image-wrapper-car:hover {
+    transform: scale(1.1);
+}
+
+.football-background-image, .car-background-image { 
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.football-background-image:hover .image-wrapper-football,  .car-background-image:hover .image-wrapper-car{
+    opacity: 0.3;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: center;  
+}
+
+.car-btn, .football-btn {
+    visibility: hidden;
+    transition: all 1.5s ease;
+}
+
+.car-background-image:hover .car-btn, .football-background-image:hover .football-btn {
+    visibility: visible;
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    cursor: pointer;
+    padding: 20px 30px;
+    background: black;
+    border-radius: 15px;
+    color: white;
+    font-family: cursive;
+    font-size: 24px;
+    border: 4px solid white;
+    text-decoration: none!important;
+}
+
+.car-background-image .car-btn:hover, .football-background-image .football-btn:hover {
+    background: white;
+    border: 4px solid black;
+    color: black;
+
+}
+
+@media (max-width: 1000px) {
+    .homepage-wrapper {
+        flex-direction: column;
+    }
+    .football-background-image, .car-background-image {
+        height: 50vh;
+    }
+}
+
+@media (max-width: 500px) {
+    .car-background-image:hover .car-btn, .football-background-image:hover .football-btn {
+        padding: 15px 20px;
+    }
+}
