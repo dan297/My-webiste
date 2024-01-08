@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+}
+
+:root {
+    --font-family: 'lemon-milk-pro'
+}
+
+/*  nav  */
+
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    background-color: #494949;
+    color: white;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 800px;
+    margin: 30px 0px 30px 20px;
+    font-size: 22px;
+    font-family: var(--font-family);
+    font-weight: bold;
+}
+
+.login-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0px 30px 80px;    
+    font-size: 22px;
+    font-family: var(--font-family);
+    font-weight: bold;
+}
+
+.nav-wrapper li {
+    list-style: none;
+}
+
+#login-btn {
+    list-style: none;
+}

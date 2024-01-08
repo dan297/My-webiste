@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+}
+
+:root {
+    --font-family: 'lemon-milk-pro'
+}
+
+/*  nav  */
+
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: transparent;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 800px;
+    margin: 30px 20px;
+    font-size: 22px;
+    font-family: var(--font-family);
+    font-weight: bold;
+    align-items: center;
+}
+
+.login-wrapper {
+    display: flex;
+    font-size: 22px;
+    font-family: var(--font-family);
+    font-weight: bold;
+    align-items: center;
+    margin-right: 80px;
+}
+
+.nav-wrapper li {
+    list-style: none;
+}
+
+#login-btn {
+    list-style: none;
+}
+
+.gym-logo {
+    display: flex;
+    margin-left: 80px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+/*  end nav  */
+
+.gym-container {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+}
+
+.gym-wrapper {
+    width: 2200px;
+    background-color: rgb(45, 44, 44);
+    margin: 0px 50px;
+}

@@ -16,7 +16,7 @@ body {
     flex-direction: row-reverse;
 }
 
-.image-wrapper-football {
+.image-wrapper-gym {
     background-image: url(../images/gym.jpeg);
     height: 100%;
     background-size: cover;
@@ -34,18 +34,18 @@ body {
     transition: all 2s ease;
 }
 
-.image-wrapper-football:hover, .image-wrapper-car:hover {
+.image-wrapper-gym:hover, .image-wrapper-car:hover {
     transform: scale(1.1);
 }
 
-.football-background-image, .car-background-image { 
+.gym-background-image, .car-background-image { 
     width: 100%;
     height: 100vh;
     overflow: hidden;
     position: relative;
 }
 
-.football-background-image:hover .image-wrapper-football,  .car-background-image:hover .image-wrapper-car{
+.gym-background-image:hover .image-wrapper-gym,  .car-background-image:hover .image-wrapper-car{
     opacity: 0.3;
 }
 
@@ -54,12 +54,12 @@ body {
     justify-content: center;  
 }
 
-.car-btn, .football-btn {
+.car-btn, .gym-btn {
     visibility: hidden;
     transition: all 1.5s ease;
 }
 
-.car-background-image:hover .car-btn, .football-background-image:hover .football-btn {
+.car-background-image:hover .car-btn, .gym-background-image:hover .gym-btn {
     visibility: visible;
     position: absolute;
     top: 50%;
@@ -77,7 +77,7 @@ body {
     text-decoration: none!important;
 }
 
-.car-background-image .car-btn:hover, .football-background-image .football-btn:hover {
+.car-background-image .car-btn:hover, .gym-background-image .gym-btn:hover {
     background: white;
     border: 4px solid black;
     color: black;
@@ -88,13 +88,13 @@ body {
     .homepage-wrapper {
         flex-direction: column;
     }
-    .football-background-image, .car-background-image {
+    .gym-background-image, .car-background-image {
         height: 50vh;
     }
 }
 
 @media (max-width: 500px) {
-    .car-background-image:hover .car-btn, .football-background-image:hover .football-btn {
+    .car-background-image:hover .car-btn, .gym-background-image:hover .gym-btn {
         padding: 15px 20px;
     }
 }
