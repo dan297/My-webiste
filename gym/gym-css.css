@@ -52,9 +52,25 @@ body {
     margin: 20px 0px 20px 80px;
 }
 
+li.nav-btn {
+    padding: 20px 40px;
+}
+
+#login-btn {
+    background-color: #802525;
+    display: flex;
+    justify-content: center;
+    padding: 20px 40px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#login-btn:hover {
+    background-color: #990606;
+}
+
 .nav-container:hover {
         background-color: rgb(57, 56, 56);
-        transform: scale(1.1);      
 }
 
 @media (max-width: 1000px) {
