@@ -42,6 +42,7 @@ body {
     width: 100%;
     height: 100vh;
     position: relative;
+    overflow: hidden;
 }
 
 .gym-background-image:hover .image-wrapper-gym,  .car-background-image:hover .image-wrapper-car{

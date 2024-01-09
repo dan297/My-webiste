@@ -75,19 +75,26 @@ body {
 .gym-wrapper {
     width: 2200px;
     margin: 0px 50px;
+    position: relative;
+    overflow: hidden;
 }
 
 .gym-background {
     background-image: url(../images/wp9484887.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-x: -250px;
+    background-position-x: -100px;
     width: 100%;
     height: 100%;
+    position: absolute;
 }
 
 .gym-textbox {
-    width: 200px;
-    height: 200px;
-    background-color: white;
+    width: 650px;
+    height: 120%;
+    background: radial-gradient(#801011, #000000);
+    position: absolute;
+    left: 12%;
+    transform: rotate(15deg);
+    top: -10%;
 }
