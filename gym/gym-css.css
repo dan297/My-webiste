@@ -105,12 +105,50 @@ li.nav-btn {
     position: absolute;
 }
 
-.gym-textbox {
-    width: 650px;
-    height: 120%;
-    background: radial-gradient(#801011, #000000);
+.gym-textbox-container {
+    width: 700px;
+    background: transparent;
     position: absolute;
-    left: 12%;
-    transform: rotate(15deg);
-    top: -10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    top: 30%;
+    left: 5%;
+}
+
+.gym-textbox {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family);
+}
+
+.gym-textbox .title {
+    font-size: 64px;
+}
+
+.gym-textbox .description {
+    font-size: 32px;
+}
+
+.description-and-btn {
+    display: flex;
+    flex-direction: column;
+}
+
+.gym-textbox .description-btn {
+    margin-top: 40px;
+    padding: 20px 40px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 10px;
+    transition: all 1s ease;
+    width: 75px;
+    cursor: pointer;
+}
+
+
+.gym-textbox .description-btn:hover {
+    background-color: black;
 }
