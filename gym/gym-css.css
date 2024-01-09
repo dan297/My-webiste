@@ -42,7 +42,7 @@ body {
     list-style: none;
 }
 
-#login-btn {
+.login-btn {
     list-style: none;
 }
 
@@ -56,7 +56,7 @@ li.nav-btn {
     padding: 20px 40px;
 }
 
-#login-btn {
+.login-btn {
     background-color: #802525;
     display: flex;
     justify-content: center;
@@ -65,7 +65,7 @@ li.nav-btn {
     cursor: pointer;
 }
 
-#login-btn:hover {
+.login-btn:hover {
     background-color: #990606;
 }
 
@@ -106,7 +106,7 @@ li.nav-btn {
 }
 
 .gym-textbox-container {
-    width: 700px;
+    width: 850px;
     background: transparent;
     position: absolute;
     display: flex;
@@ -124,11 +124,13 @@ li.nav-btn {
 }
 
 .gym-textbox .title {
-    font-size: 64px;
+    font-size: 100px;
+    text-transform: uppercase;
 }
 
 .gym-textbox .description {
-    font-size: 32px;
+    font-size: 24px;
+    width: 700px;
 }
 
 .description-and-btn {
@@ -136,19 +138,32 @@ li.nav-btn {
     flex-direction: column;
 }
 
-.gym-textbox .description-btn {
-    margin-top: 40px;
-    padding: 20px 40px;
-    background-color: transparent;
-    border: 2px solid white;
-    color: white;
-    border-radius: 10px;
-    transition: all 1s ease;
-    width: 75px;
-    cursor: pointer;
+.gain {
+    color: #802525;
 }
 
+.gym-textbox .description-btn {
+    background-color: #802525;
+    display: flex;
+    justify-content: center;
+    padding: 20px 40px;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 100px;
+    font-size: 20px;
+}
 
 .gym-textbox .description-btn:hover {
-    background-color: black;
+    background-color: #990606;
+}
+
+.gym-textbox .login-btn {
+    width: 100px;
+    font-size: 20px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
 }
