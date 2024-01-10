@@ -8,7 +8,7 @@ body {
 }
 
 /*  nav  */
-.nav-container {
+.nav-container, .nav-container-mobile {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -38,18 +38,24 @@ body {
     margin-right: 80px;
 }
 
-.nav-wrapper li {
+.nav-wrapper li, .login-btn {
     list-style: none;
 }
 
-.login-btn {
+.nav-btn {
+    text-decoration: none;
+    color: white;
     list-style: none;
 }
 
-.gym-logo {
+.gym-logo, .gym-logo-mobile {
     display: flex;
     border-radius: 50%;
     margin: 20px 0px 20px 80px;
+}
+
+.gym-logo-mobile {
+    margin: 20px auto;
 }
 
 li.nav-btn {
@@ -69,13 +75,20 @@ li.nav-btn {
     background-color: #990606;
 }
 
-.nav-container:hover {
+.nav-container:hover, .nav-container-mobile:hover {
         background-color: rgb(57, 56, 56);
+}
+
+.nav-container-mobile {
+    display: none;
 }
 
 @media (max-width: 1000px) {
     .nav-container {
         display: none;
+    }
+    .nav-container-mobile {
+        display: block;
     }
 }
 /*  end nav  */
@@ -151,12 +164,12 @@ li.nav-btn {
     background-color: #802525;
     display: flex;
     justify-content: center;
-    padding: 40px 40px;
+    padding: 25px 40px;
     border-radius: 15px;
     cursor: pointer;
-    width: 150px;
     font-size: 24px;
     text-transform: capitalize;
+    width: 150px;
 }
 
 .gym-textbox .description-btn:hover {
@@ -164,10 +177,11 @@ li.nav-btn {
 }
 
 .gym-textbox .login-btn {
-    width: 150px;
     font-size: 24px;
     text-transform: capitalize;
-    padding: 40px;
+    padding: 25px 40px;
+    align-items: center;
+    width: 150px;
 }
 
 .buttons {
@@ -206,12 +220,15 @@ li.nav-btn {
         top: 30%;
         width: unset;
     }
+    .gym-textbox {
+        max-width: 550px;
+    }
     .gym-textbox .description {
         font-size: 20px;
         width: 450px;
     }
     .gym-textbox .title {
-        font-size: 52px;
+        font-size: 64px;
     }
     .buttons {
         gap: 10px;
@@ -232,5 +249,11 @@ li.nav-btn {
     }
     .gym-textbox-container {
         left: unset;
+    }
+    .gym-textbox{
+        max-width: 400px;
+    }
+    .gym-textbox .description {
+        width: unset;
     }
 }
