@@ -124,7 +124,7 @@ li.nav-btn {
 }
 
 .gym-background-desktop {
-    background-image: url(../images/wp9484887.jpeg);
+    background-image: url(/images/wp9484887.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: -100px;
@@ -135,7 +135,7 @@ li.nav-btn {
 
 .gym-background-mobile {
     display: none;
-    background-image: url(../images/desktop-wallpaper-gyorgy-szilassy-on-one-day-calisthenics-iphone-thumbnail.jpeg);
+    background-image: url(/images/desktop-wallpaper-gyorgy-szilassy-on-one-day-calisthenics-iphone-thumbnail.jpeg);
 }
 
 .gym-textbox-container {

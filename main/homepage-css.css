@@ -17,7 +17,7 @@ body {
 
 .image-wrapper-gym-mobile {
     display: none;
-    background-image: url(../images/gym.jpeg);
+    background-image: url(/images/gym.jpeg);
     height: 100%;
     transition: all 2s ease;
     background-size: cover;
@@ -26,7 +26,7 @@ body {
 }
 
 .image-wrapper-gym {
-    background-image: url(../images/c8515a695eb660bb2a3d66f38479f1b1.jpeg);
+    background-image: url(/images/c8515a695eb660bb2a3d66f38479f1b1.jpeg);
     height: 100%;
     transition: all 2s ease;
     background-size: cover;
