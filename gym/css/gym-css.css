@@ -4,7 +4,10 @@ body {
 }
 
 :root {
-    --font-family: 'lemon-milk-pro'
+    
+    --font-family: 'lemon-milk-pro';
+    --button-color: #802525;
+    --button-color-hover: #990606;
 }
 
 /*  nav  */
@@ -299,12 +302,72 @@ li.nav-btn {
     grid-template-columns: 33% 33% 33%;
 }
 
+.workouts-page-desktop-background {
+    background-size: cover;
+    background-image: url(/images/workoutsbk.jpeg);
+    background-repeat: no-repeat;
+    height: 95vh;
+    width: 100%;
+}
+
+.background-wrapper {
+    position: relative;
+}
+
+.workout-title {
+    text-transform: uppercase;
+    font-size: 72px;
+}
+
+.workout-des {
+    text-transform: capitalize;
+    font-size: 27px;
+    margin-top: -35px;
+}
+.workout-button {
+    text-transform: capitalize;
+    background-color: var(--button-color);
+    color: white;
+    border-radius: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.workout-button:hover {
+    background-color: var(--button-color-hover);
+}
+
+.background-text-wrapper {
+    position: absolute;
+    top: 30%;
+    z-index: 100;
+    color: white;
+    left: 13%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
 .options {
     border: 2px solid;
 }
 
 .nutrition {
     grid-area: 2 / 1 / 3 / span 4;
+}
+
+@media (max-width: 1400px) {
+    .workouts-page-desktop-background {
+        height: 800px;
+    }
+}
+@media (max-width: 1000px) {
+    .workouts-page-desktop-background {
+        height: 600px;
+    }
 }
 
 /* end workouts page */
