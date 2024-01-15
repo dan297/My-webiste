@@ -332,9 +332,15 @@ li.nav-btn {
     cursor: pointer;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    width: 75px;
+    height: 75px;
+    align-items: center;
+    margin-left: 30px;
 }
 
+.workout-button svg {
+    transform: rotate(90deg);
+}
 
 .workout-button:hover {
     background-color: var(--button-color-hover);
@@ -348,7 +354,7 @@ li.nav-btn {
     left: 13%;
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 65px;
 }
 
 .options {
@@ -358,6 +364,7 @@ li.nav-btn {
 .nutrition {
     grid-area: 2 / 1 / 3 / span 4;
 }
+
 
 @media (max-width: 1400px) {
     .workouts-page-desktop-background {
