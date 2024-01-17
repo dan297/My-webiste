@@ -421,8 +421,26 @@ li.nav-btn {
     background-color: var(--back-color-grey);
 }
 
+.about-us-container {
+    height: 700px;
+    width: 100%;
+}
+.about-us-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
 .about-us-background-image {
     background-image: url("/images/about-us-backround-jpeg.jpeg");
+    background-repeat: no-repeat;
+    height: 600px;
+    border-radius: 10px;
+    width: 85%;
+    background-size: cover;
+
 }
 
 
@@ -440,6 +458,12 @@ li.nav-btn {
     }
     .workout-title {
         font-size: 70px;
+    }
+    .about-us-background-image {
+        height: 400px;
+    }
+    .about-us-container {
+        height: 500px;
     }
 }
 
