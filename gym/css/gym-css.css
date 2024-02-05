@@ -991,6 +991,29 @@ li.nav-btn {
         justify-content: center;
     }
 }
+
+/* shop page */
+
+.banner-wrapper{
+    height: 700px;
+    width: 100%;
+}
+
+.banner-image {
+    background-image: url(/images/protein-blog.jpeg);
+    width: 100%;
+    background-size: cover;
+    height: 100%;
+}
+
+@media (max-width: 770px) {
+    .banner-wrapper {
+        height: 400px;
+    }
+}
+
+/* end shop page */
+
 /* end gallery page */
 
 /* footer */
