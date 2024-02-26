@@ -1183,6 +1183,41 @@ input[type=text], select, textarea {
 
 /* end login page */
 
+/*  progress page */
+
+.progress-container {
+    height: 100vh;
+    background: var(--red-background);
+    width: 100%;
+    color: white;
+}
+
+.progress-wrapper {
+    max-width: 1700px;
+    margin: auto;
+    padding: 20px;
+}
+
+.progress-nav {
+    position: unset;
+    background-color: black;
+}
+
+.titleAndWorkoutPlan {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    justify-content: space-around;
+}
+
+.caloriesAndActivityContainer {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+}
+
+/* end progress page */
+
 /* footer */
 
 .footer-container {
